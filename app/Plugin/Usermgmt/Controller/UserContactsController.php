@@ -131,10 +131,11 @@ class UserContactsController extends UserMgmtAppController {
 				}
 			} else {
 				if ($contactValidate) {
+					//debug($this->request->data);
 					$this->request->data['UserContact']['user_id'] = $userId;
 					$this->UserContact->save($this->request->data,false);
-					$this->__sendMailToAdmin($this->request->data['UserContact']['name'], $this->request->data['UserContact']['email'], $this->request->data['UserContact']['phone'], $this->request->data['UserContact']['requirement']);
-					$this->Session->setFlash(__('thank you for contacting us. we will be in touch with you very soon'));
+					$this->__sendMailToAdmin($this->request->data['UserContact']['name'], $this->request->data['UserContact']['email'], "--", $this->request->data['UserContact']['requirement']);
+					$this->Session->setFlash(__('Gracias por contactarnos, pronto nos estaremos comunicando contigo.'));
 					$this->redirect('/');
 				}
 			}
@@ -156,14 +157,14 @@ class UserContactsController extends UserMgmtAppController {
 	 * @param string $requirement entered requirement in enquiry form
 	 * @return void
 	 */
-	private function __sendMailToAdmin($name, $email, $phone, $requirement) {
-		$emailObj = new CakeEmail('default');
+	private function __sendMailToAdmin($name, $email, $phone = null, $requirement) {
+		$emailObj = new CakeEmail('smtp');
 		$emailObj->emailFormat('html');
 		$fromConfig = EMAIL_FROM_ADDRESS;
 		$fromNameConfig = EMAIL_FROM_NAME;
 		$emailObj->from(array($fromConfig => $fromNameConfig));
 		$emailObj->sender(array($fromConfig => $fromNameConfig));
-		$emailObj->subject(__('Contact Enquiry'));
+		$emailObj->subject(__('Nuevo Contacto Whim'));
 		$requirement = nl2br($requirement);
 		$emailObj->template('Usermgmt.contact_enquiry', 'Usermgmt.um_default');
 		$emailObj->viewVars(compact('name', 'email', 'phone', 'requirement'));

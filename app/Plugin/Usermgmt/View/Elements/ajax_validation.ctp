@@ -19,6 +19,8 @@ $(document).ready(function(){
 					$('.submit-indicator').remove();
 					$(self).unbind();
 				} else {
+					console.log("Vamos a submitear forma");
+					console.log(formId);
 					$(formId).submit();
 				}
 			}

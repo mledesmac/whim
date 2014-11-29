@@ -445,13 +445,22 @@ CONTACT
 			</div>
 		
 			<!--=== Contact Form ===-->
+			<?php echo $this->element('Usermgmt.ajax_validation', array('formId' => 'contact-form', 'submitButtonId' => 'submitButton')); ?>
 
-			<form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="#" method="post" novalidate>
+			<?= $this->Form->create('UserContact', array('url' => '/contactUs', 
+				'class' => 'col-sm-6 col-md-offset-1 scrollimation fade-left d3',
+				'id' => 'contact-form',
+				'inputDefaults' => array('div' => false, 'label' => false) ) ); ?>
 				
 				<div class="form-group">
-				  <label class="control-label" for="contact-name">Name</label>
+				  <label class="control-label" for="contact-name">Nombre</label>
 				  <div class="controls">
-					<input id="contact-name" name="contactName" placeholder="Nombre" class="form-control requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Please enter your name">
+					<?= $this->Form->input('name', array(
+						'placeholder' => __('Nombre'),
+						'data-new-placeholder' => 'Nombre',
+						'data-error-empty' => 'Nombre',
+						'class' => 'form-control requiredField'
+					) ); ?>
 					<i class="fa fa-user"></i>
 				  </div>
 				</div><!-- End name input -->
@@ -459,7 +468,12 @@ CONTACT
 				<div class="form-group">
 				  <label class="control-label" for="contact-mail">Email</label>
 				  <div class=" controls">
-					<input id="contact-mail" name="email" placeholder="Correo" class="form-control requiredField" data-new-placeholder="Correo" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
+				  	<?= $this->Form->input('email', array(
+						'placeholder' => __('Correo'),
+						'data-new-placeholder' => 'Correo',
+						'data-error-empty' => 'Correo',
+						'class' => 'form-control requiredField'
+					) ); ?>
 					<i class="fa fa-envelope"></i>
 				  </div>
 				</div><!-- End email input -->
@@ -467,15 +481,18 @@ CONTACT
 				<div class="form-group">
 				  <label class="control-label" for="contact-message">Message</label>
 					<div class="controls">
-						<textarea id="contact-message" name="comments"  placeholder="Mensaje" class="form-control requiredField" data-new-placeholder="Mensaje" rows="6" data-error-empty="Please enter your message"></textarea>
+						<?= $this->Form->input('requirement', array(
+							'type' => 'textarea',
+							'placeholder' => __('Mensaje'),
+							'class' => 'form-control requiredField'
+						) ); ?>
 						<i class="fa fa-comment"></i>
 					</div>
 				</div><!-- End textarea -->
 				
-				<p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Enviar Mensaje</button></p>
-				<input type="hidden" name="submitted" id="submitted" value="true" />
+				<p><button type="submit" id="submitButton" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Enviar Mensaje</button></p>
 				
-			</form><!-- End contact-form -->
+			<?= $this->Form->end(); ?><!-- End contact-form -->
 			
 		</div>
 		
