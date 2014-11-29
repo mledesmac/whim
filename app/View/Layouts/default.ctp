@@ -29,7 +29,7 @@
 	<link rel="apple-touch-icon" href="img/style1/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/style1/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/style1/apple-touch-icon-114x114.png">
-    <link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
 
 	<script language="javascript">
 		var urlForJs="<?php echo SITE_URL ?>";
@@ -65,6 +65,21 @@
 			'style1/styles-8'
 			));
 
+		/* Usermgmt Plugin CSS */
+		echo $this->Html->css('/usermgmt/css/umstyle.css?q='.QRDN);
+
+		/* Chosen is taken from https://github.com/harvesthq/chosen/releases/ */
+		echo $this->Html->css('/plugins/chosen/chosen.css?q='.QRDN);
+
+		/* Chosen is taken from https://github.com/harvesthq/chosen/releases/ */
+		echo $this->Html->script('/plugins/chosen/chosen.jquery.min.js?q='.QRDN);
+
+		/* Usermgmt Plugin JS */
+		echo $this->Html->script('/usermgmt/js/umscript.js?q='.QRDN);
+		echo $this->Html->script('/usermgmt/js/ajaxValidation.js?q='.QRDN);
+
+		echo $this->Html->script('/usermgmt/js/chosen/chosen.ajaxaddition.jquery.js?q='.QRDN);
+
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
@@ -88,7 +103,7 @@
 				'lat': 19.34442,
 				'lng': -99.20670,
 				'zoom' : 15,
-				'infoText':'<p>Whim
+				'infoText':'<p>Whim\
 							<br/>Mexico\
 							<br/>DF 10000</p>',
 				'linkText':'Ver en Google Maps',
