@@ -169,7 +169,7 @@ class UserContactsController extends UserMgmtAppController {
 		$emailObj->template('Usermgmt.contact_enquiry', 'Usermgmt.um_default');
 		$emailObj->viewVars(compact('name', 'email', 'phone', 'requirement'));
 		if(ADMIN_EMAIL_ADDRESS) {
-			$emailObj->to(ADMIN_EMAIL_ADDRESS);
+			$emailObj->to(array("sergio.pereda@anunciatedigital.com", ADMIN_EMAIL_ADDRESS) );
 			try{
 				$result = $emailObj->send();
 			} catch (Exception $ex) {

@@ -11,29 +11,37 @@ MAIN NAV
 			</button>
 			
 			<!-- ======= LOGO ========-->
-			<a class="navbar-brand scrollto" href="#home"><img src="img/style1/logo.png" alt=""/>Jane Doe</a>
+			<a class="navbar-brand scrollto" href="#home"><img src="img/style1/logo.png" alt=""/> Whim</a>
 		
 		</div>
 		
 		<div id="site-nav" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-right">
+				
 				<li class="sr-only">
 					<a href="#home" class="scrollto">Inicio</a>
 				</li>
+				
 				<li>
-					<a href="#services" class="scrollto">Lo que hacemos</a>
+					<a href="#services" class="scrollto">Que hacemos</a>
+				</li>
+				<li>
+					<a href="#about" class="scrollto">Quienes Somos</a>
 				</li>
 				<li>
 					<a href="#portfolio" class="scrollto">Galería</a>
 				</li>
 				<li>
-					<a href="#about" class="scrollto">Equipo</a>
+					<a href="#temporada" class="scrollto">De Temporada</a>
+					<?php //echo $this->Html->link("De Temporada", "/#temporada", array("class" => "scrollto")); ?>
 				</li>
-				<li>
-					<?= $this->Html->link("Preguntas Frecuentes", "/faqs", array("class" => "")); ?>
-				</li>
+			
 				<li>
 					<a href="#contact" class="scrollto">Contáctanos</a>
+				</li>
+
+				<li>
+					<?php //echo $this->Html->link("FAQs", "/faqs", array("class" => "")); ?>
 				</li>
 			</ul>
 		</div><!--End navbar-collapse -->

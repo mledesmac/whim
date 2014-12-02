@@ -47,6 +47,11 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     text-align:center;
 }
 
+.section-title2 {
+    padding:20px 20px;
+    text-align:center;
+}
+
 /*-----------------------
 ----- Layout Styles -----
 -------------------------*/
@@ -62,7 +67,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 .bg-color1{
     color:#fff;
-    background:#509B9E;
+    background:#ec6766;
 }
 
 .bg-color2{
@@ -76,7 +81,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 .border-bottom-color2{
-    border-bottom:7px solid #52CCBA;
+    border-bottom:7px solid #d45655;
 }
 
 .border-top-color2{
@@ -303,6 +308,17 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     font-weight: 400;
 }
 
+#home p.slogan{
+    margin: 0;
+    font-size: 50px;
+    font-weight: 400;
+    color: #634c4e;
+}
+
+#home p.slogan span {
+    color: #fff;
+}
+
 #home h1{
     margin:0;
     font-size: 82px;
@@ -386,7 +402,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 .service-item p{
     margin: auto;
-    max-width: 250px;
+    max-width: 290px;
 }
 
 /*-----------------------

@@ -1,5 +1,5 @@
 <?php
-$this->set("title_for_layout","Whim - Cupcakes cutes !");
+$this->set("title_for_layout","Whim - Cupcakes, pasteles, eventos");
 ?>
 <!-- ==============================================
 HEADER
@@ -8,11 +8,13 @@ HEADER
 
 	<div class="container text-center" style="left: 20%">
 	
-		<p>Welcome to</p>
+		<p>¡Hola! Nosotros Somos</p>
 		
 		<img src="img/style1/logo-whim-header.png" />
 		
-		<p style="font-family: 'Grand Hotel', cursive;">The best choice for your online personal portfolio</p>
+		<p class="slogan" style="font-family: 'Grand Hotel', cursive;">Just what you <span>want</span></p>
+
+		<p><br><img src="img/style1/scroll.png"></p>
 	
 	</div>
 	
@@ -20,11 +22,12 @@ HEADER
 <!-- ==============================================
 SERVICES
 =============================================== -->
+
 <section id="services" class="add-padding">
 
 	<div class="container">
 		
-		<h1 class="section-title big-text scrollimation fade-up">My Services</h1>
+		<h1 class="section-title big-text scrollimation fade-up">Nuestros Servicios</h1>
 		
 		<div class="row">
 		
@@ -32,9 +35,9 @@ SERVICES
 			
 				<div class="service-icon"><i class="fa"><img src="img/style1/ico-cake.png" alt="" style="border: 0px;" /></i></div>
 				
-				<h3>Brand Identity</h3>
+				<h3>Pasteles</h3>
 				
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+				<p>En Whim hacemos ricos pasteles con diseños personalizados, para cualquier ocasión. Desde un cumpleaños hasta el día más importante de tu vida, deja que Whim haga de ese momento especial algo único.</p>
 				
 				
 			</div>
@@ -43,9 +46,9 @@ SERVICES
 			
 				<div class="service-icon"><i class="fa"><img src="img/style1/ico-cupcake.png" alt="" style="border: 0px;" /></i></div>
 				
-				<h3>Web Design</h3>
+				<h3>¡Celebra con Cupcakes!</h3>
 				
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+				<p>Ya sea por cumplir tu antojo o por alguna celebración especial, como promocional o regalo corporativo, con diseños hechos a tu antojo, nuestros cupcakes son la opcíon. Whim sin limites para la imaginación.</p>
 				
 				
 			</div>
@@ -54,12 +57,47 @@ SERVICES
 			
 				<div class="service-icon"><i class="fa"><img src="img/style1/ico-candy.png" alt="" style="border: 0px;" /></i></div>
 				
-				<h3>Rocket Science</h3>
+				<h3>Mesas de Dulces</h3>
 				
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+				<p>Imagina una mesa cubierta de tus postres y dulces favoritos. Cupcakes, paletas, gomitas, galletas , brownies, mousses etc. Todo personalizado. Deja que Whim le de ese toque dulce a tu evento.</p>
 				
 			</div>
 			
+		</div>
+		
+	</div>
+</section>
+
+
+
+
+
+
+<!-- ==============================================
+ABOUT
+=============================================== -->
+<section id="about" class="add-padding bg-color2">
+
+	<div class="container">
+		
+		<div class="row">
+		
+			<div class="col-sm-6 scrollimation fade-right d1">
+			
+				<img class="img-responsive polaroid" src="img/style1/about.jpg" alt="" />
+			
+			</div>
+			
+			<div class="col-sm-6 scrollimation fade-left d3">
+			
+				<h1 class="big-text">NOSOTROS SOMOS WHIM </h1>
+				
+				<p class="lead">Una empresa joven mexicana formada por un gran equipo, Arturo Barbosa y Tania Vázquez. Que al combinar habilidades y talento como chef y diseñadora que somos, le damos vida a esta loca aventura llamada Whim.</p>
+			
+				<p>Nos apasiona combinar nuestro conocimiento y talento para crear y plasmar cosas que generen una reacción positiva en quienes nos dan la oportunidad de conocernos a través de lo que sabemos hacer mejor. Nos gusta ayudar a crear momentos únicos y especiales como si fueran nuestros y hacer felices a nuestros clientes.</p>
+			
+			</div>
+		
 		</div>
 		
 	</div>
@@ -67,28 +105,28 @@ SERVICES
 </section>
 
 <!-- ==============================================
-PORTFOLIO
+GALERIA
 =============================================== -->
 <section id="portfolio" class="add-padding">
 
 	<div class="container">
 		
-		<h1 class="big-text text-center scrollimation fade-in">My Works</h1>
+		<h1 class="big-text text-center scrollimation fade-in">Nuestro Trabajo</h1>
 		
 		<!--==== Portfolio Filters ====-->
 		<div id="filter-works">
 			<ul>
 				<li class="active scrollimation fade-right d1">
-					<a href="#" data-filter="*">All</a>
+					<a href="#" data-filter="*">Todo</a>
 				</li>
 				<li class="scrollimation fade-right">
-					<a href="#" data-filter=".identity">Identity</a>
+					<a href="#" data-filter=".pasteles">Pasteles</a>
 				</li>
 				<li class="scrollimation fade-left">
-					<a href="#" data-filter=".logo">Logo</a>
+					<a href="#" data-filter=".cupcakes">Cupcakes</a>
 				</li>
 				<li class="scrollimation fade-left d1">
-					<a href="#" data-filter=".illustration">Illustration</a>
+					<a href="#" data-filter=".mesasdedulces">Mesas de dulces</a>
 				</li>
 			</ul>
 		</div><!--End portfolio filters -->
@@ -115,13 +153,13 @@ PORTFOLIO
 			<!-- ==============================================
 			SINGLE PROJECT ITEM
 			=============================================== -->	
-			<article class="project-item illustration">
+			<article class="project-item pasteles">
 				
-				<img class="img-responsive project-image" src="img/style1/thumb.png"  alt=""><!--Project thumb -->
+				<img class="img-responsive project-image" src="img/galeria/pasteles/detemporada/T1-rosas370x400.jpg"  alt=""><!--Project thumb -->
 				
 				<div class="hover-mask">
-					<h2 class="project-title">Designer World</h2><!--Project Title -->
-					<p>illustration</p><!--Project Subtitle -->
+					<h2 class="project-title">De Temporada</h2><!--Project Title -->
+					<p>pasteles</p><!--Project Subtitle -->
 				</div>
 				
 				<!--==== Project Preview HTML ====-->
@@ -141,13 +179,13 @@ PORTFOLIO
 			END PROJECT ITEM
 			=============================================== -->						
 			
-			<article class="project-item identity logo">
+			<article class="project-item identity cupcakes">
 				
 				<img class="img-responsive project-image" src="img/style1/thumb.png"  alt=""><!--Project thumb -->
 				
 				<div class="hover-mask">
 					<h2 class="project-title">Squirrel</h2><!--Project Title -->
-					<p>identity / logo</p><!--Project Subtitle -->
+					<p>Cupcakes</p><!--Project Subtitle -->
 				</div>
 				
 				<!--==== Project Preview HTML ====-->
@@ -164,13 +202,13 @@ PORTFOLIO
 				
 			</article><!--End Project Item -->
 
-			<article class="project-item illustration">
+			<article class="project-item pasteles">
 				
 				<img class="img-responsive project-image" src="img/style1/thumb.png"  alt=""><!--Project thumb -->
 				
 				<div class="hover-mask">
 					<h2 class="project-title">Radio Tape</h2><!--Project Title -->
-					<p>illustration</p><!--Project Subtitle -->
+					<p>pasteles</p><!--Project Subtitle -->
 				</div>
 				
 				<!--==== Project Preview HTML ====-->
@@ -186,13 +224,13 @@ PORTFOLIO
 				
 			</article><!--End Project Item -->
 
-			<article class="project-item identity">
+			<article class="project-item mesasdedulces">
 				
 				<img class="img-responsive project-image" src="img/style1/thumb.png"  alt=""><!--Project thumb -->
 				
 				<div class="hover-mask">
 					<h2 class="project-title">Austin Texas</h2><!--Project Title -->
-					<p>identity</p><!--Project Subtitle -->
+					<p>Mesas de Dulces</p><!--Project Subtitle -->
 				</div>
 				
 				<!--==== Project Preview HTML ====-->
@@ -208,13 +246,13 @@ PORTFOLIO
 				
 			</article><!--End Project Item -->
 
-			<article class="project-item logo">
+			<article class="project-item cupcakes">
 				
 				<img class="img-responsive project-image" src="img/style1/thumb.png"  alt=""><!--Project thumb -->
 				
 				<div class="hover-mask">
 					<h2 class="project-title">Red Glove</h2><!--Project Title -->
-					<p>logo</p><!--Project Subtitle -->
+					<p>Cupcakes</p><!--Project Subtitle -->
 				</div>
 				
 				<!--==== Project Preview HTML ====-->
@@ -230,13 +268,13 @@ PORTFOLIO
 				
 			</article><!--End Project Item -->
 
-			<article class="project-item logo">
+			<article class="project-item cupcakes">
 				
 				<img class="img-responsive project-image" src="img/style1/thumb.png"  alt=""><!--Project thumb -->
 				
 				<div class="hover-mask">
 					<h2 class="project-title">Checklist</h2><!--Project Title -->
-					<p>logo</p><!--Project Subtitle -->
+					<p>Cupcakes</p><!--Project Subtitle -->
 				</div>
 				
 				<!--==== Project Preview HTML ====-->
@@ -252,13 +290,13 @@ PORTFOLIO
 				
 			</article><!--End Project Item -->
 			
-			<article class="project-item identity logo">
+			<article class="project-item cupcakes">
 				
 				<img class="img-responsive project-image" src="img/style1/thumb.png"  alt=""><!--Project thumb -->
 				
 				<div class="hover-mask">
 					<h2 class="project-title">Music City</h2><!--Project Title -->
-					<p>identity / logo</p><!--Project Subtitle -->
+					<p>Cupcakes</p><!--Project Subtitle -->
 				</div>
 				
 				<!--==== Project Preview HTML ====-->
@@ -274,13 +312,13 @@ PORTFOLIO
 				
 			</article><!--End Project Item -->
 
-			<article class="project-item illustration logo">
+			<article class="project-item pasteles">
 				
 				<img class="img-responsive project-image" src="img/style1/thumb.png"  alt=""><!--Project thumb -->
 				
 				<div class="hover-mask">
 					<h2 class="project-title">Black Rock</h2><!--Project Title -->
-					<p>illustration / logo</p><!--Project Subtitle -->
+					<p>Pasteles</p><!--Project Subtitle -->
 				</div>
 				
 				<!--==== Project Preview HTML ====-->
@@ -296,27 +334,6 @@ PORTFOLIO
 				
 			</article><!--End Project Item -->
 
-			<article class="project-item illustration identity">
-				
-				<img class="img-responsive project-image" src="img/style1/thumb.png"  alt=""><!--Project thumb -->
-				
-				<div class="hover-mask">
-					<h2 class="project-title">Coyote</h2><!--Project Title -->
-					<p>illustration / identity</p><!--Project Subtitle -->
-				</div>
-				
-				<!--==== Project Preview HTML ====-->
-				
-				<div class="sr-only project-description" data-images="img/style1/slide.png,img/style1/slide.png" >
-				
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut porttitor nisl dapibus eu.</p>
-					
-					<p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
-					<p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
-					<p class="text-center"><a class="btn btn-color1" href="#external-link"><i class="fa fa-arrow-right"></i>Visit Website</a></p>
-				</div>
-				
-			</article><!--End Project Item -->	
 		</div><!-- End projects --> 
 		
 	</div><!-- End container --> 
@@ -324,42 +341,10 @@ PORTFOLIO
 
 </section>
 
-
 <!-- ==============================================
-ABOUT
+TEMPORADA
 =============================================== -->
-<section id="about" class="add-padding bg-color2">
-
-	<div class="container">
-		
-		<div class="row">
-		
-			<div class="col-sm-6 scrollimation fade-right d1">
-			
-				<img class="img-responsive polaroid" src="img/style1/about.jpg" alt="" />
-			
-			</div>
-			
-			<div class="col-sm-6 scrollimation fade-left d3">
-			
-				<h1 class="big-text">I am <br/>Jane Doe </h1>
-				
-				<p class="lead">I am Jane Doe, a twenty five year old designer from NY. I have graduated with a Bachelor degree of Graphic &amp; Web Design, from the University of Pasadena.</p>
-			
-				<p>I am passionate about combining function, interaction and form to design for fitting user experiences that make people happy. I have a passion for creating challenging, intuitive and beautiful products. My design process is very hands-on and visual.</p>
-			
-			</div>
-		
-		</div>
-		
-	</div>
-
-</section>
-
-<!-- ==============================================
-SKILLS
-=============================================== -->
-<section id="skills" class="add-padding border-bottom-color2">
+<section id="temporada" class="add-padding border-bottom-color2">
 
 	<div class="container">
 		
@@ -367,11 +352,11 @@ SKILLS
 		
 			<div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
 			
-				<h1 class="big-text">I got<br/>The skills </h1>
+				<h1 class="big-text">PARA ESTA NAVIDAD </h1>
 				
-				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt, dui ac porta.</p>
+				<p class="lead">---</p>
 			
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt, dui ac porta.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt, dui ac porta.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt, dui ac porta.</p>
+				<p>---</p>
 			
 			</div>
 		
@@ -405,26 +390,20 @@ SKILLS
 	</div>
 
 </section>
+
 	
 <!-- ==============================================
-TWITTER
+CALL OUT
 =============================================== -->
-<!--
-<section id="twitter" class="add-padding bg-color1">
+
+<section id="callout" class="bg-color1">
 
 	<div class="container">
-		<div class="row scrollimation fade-in">
-			<div class="col-sm-1 twitter-icon">
-				<i class="fa fa-twitter"></i>
-			</div>
-			<div class="col-sm-11">
-				<div id="twitter-slider" class="flexslider" data-widget-id="345690956013633536" data-tweets-length="3"></div>
-			</div>
-		</div>
+		<h1 class="section-title2 big-text scrollimation fade-up in">¿Te gusto lo que viste? Contáctanos.</h1>
 	</div>
 
 </section>
--->	
+
 <!-- ==============================================
 CONTACT
 =============================================== -->
@@ -438,9 +417,10 @@ CONTACT
 			
 				<h1 class="big-text">Contáctanos</h1>
 				
-				<p class="lead">I am available for freelance. Can't wait for the next exciting project! Could be yours?</p>
+				<p class="lead">Estamos ansiosos y emocionados por nuestro siguiente pedido o evento, Podría ser el tuyo.</p>
 			
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt, dui ac porta.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt, dui ac porta.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt, dui ac porta.</p>
+				<p>Esperamos te haya gustado lo que viste y que nos des la oportunidad de formar parte de ese evento u ocasión especial. Puedes contactarnos para cualquier cotización, comentario, sugerencia o simplemente para decir ¡hola!.
+También puedes checar nuestra sección de preguntas frecuentes más abajo.</p>
 			
 			</div>
 		
@@ -501,10 +481,40 @@ CONTACT
 </section>
 	
 <!-- ==============================================
-MAP
+faqs
 =============================================== -->
-<section id="map">
+<section id="faqs" class="bg-color2">
 
-	<div id="gmap"></div>
+	<div class="container">
+		
+		<div class="row">
+
+			<div class="col-sm-12 text-left scrollimation fade-up d1 in">
+				<h1 class="big-text">Preguntas Frequentes </h1>
+			</div>
+
+			<div class="col-sm-6 col-md-5 text-left scrollimation fade-up d1 in">
+			
+				<p class="lead">Pregunta 1</p>
+				<p>Respuesta 1</p>
+
+				<p class="lead">Pregunta 3</p>
+				<p>Respuesta 3</p>
+			
+			</div>
+		
+			<div class="col-sm-6 col-md-5 col-md-offset-1">
+			
+				<p class="lead">Pregunta 2</p>
+				<p>Respuesta 2</p>
+
+				<p class="lead">Pregunta 4</p>
+				<p>Respuesta 4</p>
+			
+			</div>
+			
+		</div>
+		
+	</div>
 
 </section>

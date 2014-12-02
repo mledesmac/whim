@@ -11,6 +11,7 @@
 		</ul>
 	
 		<p class="text-center">&copy; 2014 - Todos los derechos reservados</p>
+		<p class="text-center"><?= $this->Html->link("Aviso de Privacidad", "#"); ?></p>
 	
 	</div>
 	
